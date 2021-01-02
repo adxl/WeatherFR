@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Cities from '../Components/Cities';
 
 function CitiesProvider() {
   const [cities, setCities] = useState([]);
@@ -22,13 +23,7 @@ function CitiesProvider() {
   }, []);
 
   return (
-    <div>
-      {cities.length && cities.map((c) => (
-        <div key={c.cityId}>
-          {c.name}
-        </div>
-      ))}
-    </div>
+    <Cities cities={cities} />
   );
 }
 
