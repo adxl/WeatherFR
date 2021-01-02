@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Weather from '../Components/Weather';
 
 const APP_ID = 'be4f151ec19dacd96c7ae833d5fd2838';
 
@@ -7,7 +8,7 @@ function WeatherProvider({ city }) {
 
   const generateWeatherInfo = (data) => {
     const { name } = data;
-    const { temp } = data.main;
+    const temp = Math.round(data.main.temp);
     const { sunrise } = data.sys;
     const { sunset } = data.sys;
     const sky = data.weather[0].main;
@@ -16,17 +17,10 @@ function WeatherProvider({ city }) {
       name, temp, sunrise, sunset, sky,
     };
 
-    console.log(weatherInfo);
+    setWeather(weatherInfo);
   };
   const fetchWeather = async () => {
-    const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APP_ID}`,
-      {
-        // headers: {
-        //   'Access-Control-Allow-Origin': 'no-cors',
-        // },
-      },
-    );
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APP_ID}&units=metric`);
     const data = await response.json();
     generateWeatherInfo(data);
   };
@@ -35,12 +29,13 @@ function WeatherProvider({ city }) {
     if (city) {
       fetchWeather();
     }
-  }, []);
+    return (() => {
+      setWeather();
+    });
+  }, [city]);
 
   return (
-    <>
-      ?
-    </>
+    <Weather city={city} weather={weather} />
   );
 }
 

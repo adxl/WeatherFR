@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Cities from '../Components/Cities';
 
-function CitiesProvider() {
+function CitiesProvider({ setCity }) {
   const [cities, setCities] = useState([]);
 
   const fetchCities = async () => {
@@ -23,7 +23,9 @@ function CitiesProvider() {
   }, []);
 
   return (
-    <Cities cities={cities} />
+    <>
+      {cities && <Cities cities={cities} setCity={setCity} />}
+    </>
   );
 }
 

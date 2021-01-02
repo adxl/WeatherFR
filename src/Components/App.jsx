@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import CitiesProvider from '../Services/CitiesProvider';
-import WeatherProvider from '../Services/WeatherProvider';
+import Nav from './Header';
+
+import Router from '../Core/Router';
 
 function App() {
-  const [currentCity, setCurrentCity] = useState('paris');
   return (
     <div className="App">
-      <CitiesProvider />
-      <WeatherProvider city={currentCity} />
+      <Nav />
+      <Router />
     </div>
   );
 }
