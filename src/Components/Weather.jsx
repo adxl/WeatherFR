@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+import { Button, Modal } from 'react-bootstrap';
 
 function Weather({ city, weather }) {
+  console.log(city);
+  console.log(weather);
   return (
     <div>
-      {(city && weather)
-        ? (
-          <div className="d-flex">
-            <p>{city}</p>
-            <p>{`${weather.temp} °C`}</p>
-          </div>
-        )
-        : <p>Loading..</p>}
+      <p>{`${city} : ${weather.temp} °C`}</p>
+      <p>{weather.sky}</p>
+      <p>{`Lever: ${weather.sunrise}`}</p>
+      <p>{`Coucher: ${weather.sunset}`}</p>
     </div>
   );
 }

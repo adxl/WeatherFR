@@ -20,6 +20,8 @@
     "rules": {
         "no-unused-vars": "warn",
         "no-console": "off",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "react/jsx-max-props-per-line": "off",
+        "react/jsx-first-prop-new-line": "off"
     }
 }

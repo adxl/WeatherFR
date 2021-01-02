@@ -1,3 +1,63 @@
 body {
   margin: 0;
 }
+p {
+  margin: 0;
+}
+#map {
+  display: inline-block;
+  height: 90vh;
+}
+
+#map img {
+  height: 100%;
+}
+
+.city {
+  position: absolute;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 12pt;
+}
+
+#bordeaux {
+  top: 60%;
+  left: 33%;
+}
+#lille {
+  top: 7%;
+  left: 53%;
+}
+#lyon {
+  top: 52%;
+  left: 63%;
+}
+#marseille {
+  top: 76%;
+  left: 67%;
+}
+#montpellier {
+  top: 75%;
+  left: 55%;
+}
+#nantes {
+  top: 40%;
+  left: 25%;
+}
+#nice {
+  top: 73%;
+  left: 76%;
+}
+#paris {
+  top: 25%;
+  left: 50%;
+}
+#strasbourg {
+  top: 26%;
+  left: 80%;
+}
+#toulouse {
+  top: 72%;
+  left: 45%;
+}
