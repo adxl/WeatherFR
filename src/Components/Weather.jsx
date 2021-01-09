@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-import { Button, Modal } from 'react-bootstrap';
 import { BrightnessHighFill, Moon } from 'react-bootstrap-icons';
 
 function Weather({ city, weather }) {
-  console.log(city);
-  console.log(weather);
+  // console.log(city);
+  // console.log(weather);
   return (
 
     <div id="details">

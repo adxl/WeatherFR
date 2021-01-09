@@ -13,17 +13,12 @@ function Home() {
         </p>
         <br />
         <p className="text-white font-m">
-          Weather-FR utilise deux api :
-          {' '}
+          Weather-FR utilise deux api : &nbsp;
           <a href="https://www.back4app.com/database/back4app/list-of-largest-cities-in-france">Back4App</a>
-          {' '}
-          qui permet de lister des villes de France en
-          fonction de certains critères, et
-          {' '}
+          &nbsp;
+          qui permet de lister des villes de France en fonction de certains critères, et &nbsp;
           <a href="https://openweathermap.org/current">OpenWeather</a>
-          {' '}
-          qui permet de récupérer la météo d&apos;une
-          ville au choix.
+          &nbsp; qui permet de récupérer la météo d&apos;une ville au choix.
         </p>
       </div>
     </main>

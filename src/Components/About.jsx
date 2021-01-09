@@ -6,22 +6,17 @@ function About() {
       <div id="about">
         <p className="text-white font-m">
           Weather-FR est une application réalisée en React, qui propose un service de météo.
-          Cette application utilise deux APIs :
-          {' '}
+          Cette application utilise deux APIs : &nbsp;
           <a href="https://www.back4app.com/database/back4app/list-of-largest-cities-in-france">Back4App</a>
-          {' '}
-          et
-          {' '}
+          &nbsp; et &nbsp;
           <a href="https://openweathermap.org/current">OpenWeather</a>
           .
         </p>
         <br />
         <p className="text-white font-m">
-          Ce projet a été réalisé dans le but de l&apos;apprentissage de
-          {' '}
+          Ce projet a été réalisé dans le but de l&apos;apprentissage de &nbsp;
           <a href="https://reactjs.org/">React</a>
-          {' '}
-          durant le cours du même nom au sein de l&apos;ESGI.
+          &nbsp; durant le cours du même nom au sein de l&apos;ESGI.
         </p>
         <br />
         <p className="text-white font-m">
