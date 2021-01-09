@@ -6,7 +6,7 @@ function Main() {
   const [currentCity, setCurrentCity] = useState();
 
   return (
-    <div className="d-flex">
+    <div className="d-flex mh-100">
       <CitiesProvider setCity={setCurrentCity} />
       {currentCity && <WeatherProvider city={currentCity} />}
     </div>
