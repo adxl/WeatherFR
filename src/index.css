@@ -24,15 +24,24 @@ p {
   width: 100vw;
   height: 85vh;
   position: absolute;
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 
 #details {
-  top: 20%;
-  left: 70%;
-  z-index: 2;
+  background-color: #343a406b;
+  transform: translateX(50%);
   position: absolute;
+  width: 25vw;
+  left: 50%;
+  top: 20%;
+  border-radius: 20px;
+}
+
+#details p,
+svg,
+h1 {
+  color: white;
 }
 
 #map {
@@ -104,4 +113,19 @@ footer {
   height: 15vh;
   width: 100vw;
   position: fixed;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.font-s {
+  font-size: 12pt;
+}
+.font-m {
+  font-size: 18pt;
+}
+.font-l {
+  font-size: 42pt;
 }

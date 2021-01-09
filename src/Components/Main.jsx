@@ -3,7 +3,7 @@ import CitiesProvider from '../Services/CitiesProvider';
 import WeatherProvider from '../Services/WeatherProvider';
 
 function Main() {
-  const [currentCity, setCurrentCity] = useState();
+  const [currentCity, setCurrentCity] = useState('paris');
 
   return (
     <div className="d-flex mh-100">

@@ -4,9 +4,7 @@ import Weather from '../Components/Weather';
 const APP_ID = 'be4f151ec19dacd96c7ae833d5fd2838';
 
 function WeatherProvider({ city }) {
-  console.log(city);
-
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState();
 
   const formatTimestamp = (stamp) => {
     const date = new Date(stamp * 1000);
