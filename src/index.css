@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 body {
   margin: 0;
   background-color: #343a40;
+  font-family: "Roboto", sans-serif;
 }
 
 #nav {
@@ -19,7 +22,8 @@ p {
   margin: 0;
 }
 
-#home {
+#home,
+#about {
   background-color: rgba(53, 59, 65, 0.42);
   position: absolute;
   width: 50vw;
@@ -30,7 +34,8 @@ p {
   border-radius: 20px;
 }
 
-#home a {
+#home a,
+#about a {
   color: white;
   text-decoration: underline;
 }

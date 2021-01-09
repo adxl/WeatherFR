@@ -26,7 +26,6 @@ function Home() {
           ville au choix.
         </p>
       </div>
-
     </main>
   );
 }

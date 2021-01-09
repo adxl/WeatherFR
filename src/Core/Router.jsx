@@ -5,6 +5,7 @@ import About from '../Components/About';
 
 function Router() {
   const [path, setPath] = useState();
+  const PAGES = ['/home', '/weather', '/about'];
 
   useEffect(() => {
     const { pathname } = window.location;
@@ -16,6 +17,7 @@ function Router() {
       { path === '/home' && <Home />}
       { path === '/weather' && <Main />}
       { path === '/about' && <About />}
+      { !PAGES.includes(path) && <Home />}
     </>
   );
 }
