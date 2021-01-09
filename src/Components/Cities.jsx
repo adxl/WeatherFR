@@ -13,7 +13,6 @@ function Cities({ cities, setCity }) {
           </Button>
         ))}
       </div>
-      {/* <div id="details-bg" /> */}
     </div>
   );
 }
