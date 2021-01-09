@@ -8,7 +8,7 @@ function Cities({ cities, setCity }) {
       <div id="map" className="position-relative">
         <img src="../../map.jpg" alt="map" />
         { cities.map((c) => (
-          <Button variant="success" key={c.cityId} id={c.name.toLowerCase()} className="city mx-1" onClick={() => setCity(c.name)}>
+          <Button variant="info" key={c.cityId} id={c.name.toLowerCase()} className="city mx-1" onClick={() => setCity(c.name)}>
             {c.name}
           </Button>
         ))}
