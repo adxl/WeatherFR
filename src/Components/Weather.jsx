@@ -9,19 +9,11 @@ function Weather({ city, weather }) {
   return (
 
     <div id="details">
-      <div style={{ display: 'none' }}>
-        <p>{`${city} : ${weather.temp} °C`}</p>
-        <p>{weather.name}</p>
-        <p>{weather.sky}</p>
-        <p>{`Lever: ${weather.sunrise}`}</p>
-        <p>{`Coucher: ${weather.sunset}`}</p>
-      </div>
-
       <div>
         <p className="font-weight-bold text-uppercase text-center font-m mt-3">{city}</p>
         <p className="text-center font-s mb-3">{weather.name}</p>
 
-        <h1 className="text-center font-l mb-0 pb-0">{`${weather.temp} °C`}</h1>
+        <h1 className="text-center font-xl mb-0 pb-0">{`${weather.temp} °C`}</h1>
         <p className="text-center font-s mb-5">{weather.sky}</p>
 
         <div className="d-flex justify-content-around mb-3">

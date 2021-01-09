@@ -4,7 +4,7 @@ body {
 }
 
 #nav {
-  height: 5vh;
+  height: 10vh;
   z-index: 2;
 }
 
@@ -12,10 +12,27 @@ main {
   margin: 0;
   height: 80vh;
   width: 100vw;
+  position: relative;
 }
 
 p {
   margin: 0;
+}
+
+#home {
+  background-color: rgba(53, 59, 65, 0.42);
+  position: absolute;
+  width: 50vw;
+  padding: 20px 50px 10px 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+#home a {
+  color: white;
+  text-decoration: underline;
 }
 
 #bg {
@@ -115,7 +132,7 @@ h1 {
 
 footer {
   background-color: #4d5155;
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   position: fixed;
 }
@@ -132,5 +149,8 @@ footer a {
   font-size: 18pt;
 }
 .font-l {
+  font-size: 36pt;
+}
+.font-xl {
   font-size: 42pt;
 }
